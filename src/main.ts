@@ -28,7 +28,27 @@ const userName = window.prompt(`Hi, what is your name?: `);
 console.log(`Hi ${userName}, Have a great day!`);
 
 //Asking for numbers turning them into strings
-console.log(`what are your favorite numbers?: `);
+console.log(`Let's begin, what are your favorite numbers. Let's pick two!?: `);
+
+const userNameNumberOne = window.prompt(
+  `What is your first favorite Number?: `
+);
+const userNameNumberTwo = window.prompt(
+  `What is your second favorite Number?: `
+);
+
+const firstNumber = Number(userNameNumberOne);
+const secondNumber = Number(userNameNumberTwo);
+
+//using The numbers Given by MATH
+
+let sum = firstNumber + secondNumber;
+let difference = firstNumber - secondNumber;
+let product = firstNumber * secondNumber;
+let quotient = firstNumber / secondNumber;
+let remainder = firstNumber % secondNumber;
+
+console.log(`The sum of ${firstNumber} amd ${secondNumber} is ${sum}`);
 
 //document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 //<div>
